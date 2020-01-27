@@ -102,6 +102,7 @@ test:
     paths:
       - htmlcov/
     name: "${CI_PROJECT_NAME}-${CI_JOB_ID}-coverage-html"
+    expose_as: "Test coverage"
   dependencies:
     - build
 
