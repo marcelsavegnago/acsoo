@@ -78,6 +78,10 @@ the referenced commits are not lost in case of VCS garbage collection.
 acsoo wheel
 -----------
 
+**This command is deprecated, use ``pip wheel -r requirements.txt .
+--wheel-dir=release``. pip supports caching of VCS requirements since version
+20.0, and has performance improvements (build in place) since version 20.1.**
+
 Build wheels for all dependencies found in ``requirements.txt``,
 plus the project in the current directory.
 
@@ -88,6 +92,8 @@ a sha1.
 
 acsoo release
 -------------
+
+**This command is deprecated.**
 
 Perform ``acsoo tag``, ``acsoo tag_requirements`` and
 ``acsoo wheel`` in one command.
